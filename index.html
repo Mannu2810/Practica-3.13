@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practica-3.13</title>
+</head>
+<body>
+    <h2>Accede a tu Área Clientes</h2>
+    <section>
+        <form action="web.php">
+          <p>
+            Elige tu documento
+            <br>
+            <input type="radio" name="documento" value="dni">DNI o Tarjeta de residencia
+            <br>
+            <input type="radio" name="documento" value="pasaporte">Pasaporte
+          </p> 
+<p>
+    Número de documento
+    <br>
+    <input type="text" placeholder="DNI o Tarjeta de residencia" name="ndocumento" size="40">
+</p> 
+<p>
+    Fecha de nacimiento
+    <br>
+    <input type="date" name="fecha">
+</p>
+<p>
+    <input type="checkbox">Recordar
+</p>
+<input type="submit" value="entrar">
+        </form>
+
+
+    </section>
+
+    <hr>
+
+<h2>Empieza creando tu usuario</h2>
+<section>
+<form action="web.php">
+    <input type="text" name="Nombre" placeholder="Nombre (como sale en tu DNI)" size="67">
+    <br><br>
+    <input type="text" name="1apellido" placeholder="1ºapellido (como sale en el DNI)" size="30">
+    <input type="text" name="2apellido" placeholder="2ºapellido (como sale en el DNI)" size="30">
+<br><br>
+
+<select name="menu" id="menu" >
+    <option value="DNI">DNI</option>
+    <option value="NIF">NIF</option>
+    <option value="CERT">CERT.AEAT</option>
+</select>
+
+<input type="text" name="numerodoc" placeholder="Número de documento" size="30">
+<br><br>
+
+<input type="text" name="tlf" placeholder="Móvil" size="30">
+<input type="text" name="Email" placeholder="Email" size="30">
+
+</form>
+</section>   
+
+<hr>
+
+<h2 class="new"> <strong>¿Eres nuevo? </strong></h2>
+<p class="reg">Regístrate para guardar tu información y hacer tus pedidos de forma más fácil y rápida</p>
+
+
+<section>
+<form action="web.php">
+<p>
+Email
+<br>  
+<input type="text" name="mail" placeholder="Introduce tu email" size="50">
+</p> 
+
+<p>
+Teléfono
+<br>
+<input type="text" name="tlf" placeholder="Tu teléfono" size="50">
+</p>
+<p>
+    Contraseña 
+    <br>
+    <input type="text" name="contr" placeholder="Intrduce tu contraseña" size="50">
+</p>
+<p>
+    Confirma tu contraseña 
+    <br>
+    <input type="text" name="confcontr" placeholder="Confirmar contraseña" size="50">
+</p>
+<input type="radio" name="politic">He leído y acepto <span class="subr" >Política de privacidad</span>
+<br>
+<input type="radio" name="acept">Sí, acepto recibir comunicaciones comerciales y ofertas personalizadas según mi perfil
+<br>
+<input type="submit" value="Crea tu cuenta">
+</form>
+</section>
+
+</body>
+</html>
